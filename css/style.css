@@ -228,4 +228,41 @@ team
   transition: 0.3s ease all;
 }
 
+/**************
+footer
+**************/
+footer {
+  background: #111111;
+  color: #fff;
+  padding: 20px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .hours h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+footer .container p {
+  margin-top: 5px;
+}
+footer .container .icons h3 {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+footer .container .icons a {
+  color: #fff;
+}
+footer .container .icons a i {
+  font-size: 2.4rem;
+  margin-right: 10px;
+}
+footer .container .icons a i:hover {
+  color: #ce1b28;
+  transition: 0.3s ease all;
+}
+
 /*# sourceMappingURL=style.css.map */
