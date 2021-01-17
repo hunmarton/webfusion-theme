@@ -100,6 +100,7 @@ technologies
 .technologies {
   background-color: $lightGray;
   padding-top: $sectionPadding;
+  padding-bottom: $sectionPadding;
   .container {
     display: flex;
     justify-content: space-between;
@@ -109,7 +110,8 @@ technologies
       padding: 20px 15px;
       text-align: center;
       box-shadow: 1px 1px 5px $secondary;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+      margin-top: 20px;
       // background: $white;
       height: 250px;
       display: flex;
@@ -123,7 +125,38 @@ technologies
       }
       p {
         color: $secondary;
+        text-align: justify;
+      }
+      i {
+        font-size: 4.5rem;
+        color: $primary;
+      }
+      &:hover {
+        box-shadow: 2px 2px 10px $secondary;
+        transition: $transition;
       }
     }
+  }
+}
+.about {
+  background: linear-gradient(to right, rgba($primary, 0.5), rgba($secondary, 0.5)), url(../img/traffic.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+  h3 {
+    font-size: 3.3rem;
+    font-weight: 300;
+    margin: 15px 0;
+    color: $white;
+  }
+  p {
+    color: $white;
+    font-size: 1.2rem;
+    margin-top: 40px;
   }
 }

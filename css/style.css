@@ -98,6 +98,7 @@ technologies
 .technologies {
   background-color: #f1f1f1;
   padding-top: 90px;
+  padding-bottom: 90px;
 }
 .technologies .container {
   display: flex;
@@ -109,7 +110,8 @@ technologies
   padding: 20px 15px;
   text-align: center;
   box-shadow: 1px 1px 5px #111111;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   height: 250px;
   display: flex;
   justify-content: center;
@@ -123,6 +125,38 @@ technologies
 }
 .technologies .container article p {
   color: #111111;
+  text-align: justify;
+}
+.technologies .container article i {
+  font-size: 4.5rem;
+  color: #ce1b28;
+}
+.technologies .container article:hover {
+  box-shadow: 2px 2px 10px #111111;
+  transition: 0.3s ease all;
+}
+
+.about {
+  background: linear-gradient(to right, rgba(206, 27, 40, 0.5), rgba(17, 17, 17, 0.5)), url(../img/traffic.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+}
+.about h3 {
+  font-size: 3.3rem;
+  font-weight: 300;
+  margin: 15px 0;
+  color: #fff;
+}
+.about p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
