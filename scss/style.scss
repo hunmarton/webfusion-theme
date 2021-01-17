@@ -17,6 +17,9 @@ body {
   width: 75%;
   margin: 0 auto;
 }
+.active {
+  transform: translateX(100%);
+}
 
 /*************
 Header
@@ -92,6 +95,80 @@ header {
     p {
       text-align: center;
       font-size: 1.3em;
+    }
+  }
+}
+/**************
+Menu
+**************/
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+  width: 200px;
+  height: 100%;
+  background: $secondary;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: 0.6s ease all;
+  // justify-content: center;
+  align-items: center;
+  .close {
+    position: absolute;
+    color: $white;
+    top: 20px;
+    right: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:hover {
+      transform: rotate(360deg);
+      transition: $transition;
+    }
+  }
+  ul {
+    list-style: none;
+    margin-top: 50px;
+    li {
+      font-weight: 600;
+      padding: 30px 0;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 5px;
+      &::after {
+        content: "";
+        display: block;
+        height: 1.5px;
+        width: 100%;
+        background: $white;
+        margin-top: 5px;
+      }
+      &:hover {
+        text-shadow: 1px 1px 10px $white;
+        transition: $transition;
+        cursor: pointer;
+      }
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+  .icons {
+    margin-left: 10px;
+    position: absolute;
+    bottom: 20px;
+    a {
+      color: $white;
+      i {
+        font-size: 2.4rem;
+        margin-right: 10px;
+        &:hover {
+          color: $primary;
+          transition: $transition;
+        }
+      }
     }
   }
 }
@@ -179,6 +256,7 @@ team
   .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     article {
       position: relative;
       margin-top: 50px;
