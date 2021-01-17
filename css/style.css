@@ -122,8 +122,8 @@ Menu
   cursor: pointer;
 }
 .menu .close:hover {
-  transform: rotate(360deg);
   transition: 0.3s ease all;
+  transform: scale(1.1);
 }
 .menu ul {
   list-style: none;

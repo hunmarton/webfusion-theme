@@ -123,8 +123,8 @@ Menu
     font-size: 1.5rem;
     cursor: pointer;
     &:hover {
-      transform: rotate(360deg);
       transition: $transition;
+      transform: scale(1.1);
     }
   }
   ul {
