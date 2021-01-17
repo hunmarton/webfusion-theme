@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap");
 @import "./variables.scss";
+@import "./mixins.scss";
 
 /*************
 Basic styles
@@ -101,6 +102,9 @@ technologies
   background-color: $lightGray;
   padding-top: $sectionPadding;
   padding-bottom: $sectionPadding;
+  h2 {
+    @include headings();
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -138,6 +142,9 @@ technologies
     }
   }
 }
+/**************
+about
+**************/
 .about {
   background: linear-gradient(to right, rgba($primary, 0.5), rgba($secondary, 0.5)), url(../img/traffic.jpg);
   background-position: center;
@@ -158,5 +165,59 @@ technologies
     color: $white;
     font-size: 1.2rem;
     margin-top: 40px;
+  }
+}
+/**************
+team
+**************/
+.team {
+  background: $lightGray;
+  padding: $sectionPadding;
+  h2 {
+    @include headings();
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    article {
+      position: relative;
+      margin-top: 50px;
+      flex: 0 0 31%;
+      background: $white;
+      text-align: center;
+      box-shadow: 1px 1px 5px $secondary;
+      border-radius: 8px;
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 6px solid $white;
+        box-shadow: 1px 1px 10px $secondary;
+      }
+      h3 {
+        margin-top: 70px;
+        color: $primary;
+        font-size: 1.8rem;
+      }
+      small {
+        color: $primary;
+      }
+      p {
+        margin: 30px 0;
+        color: $secondary;
+      }
+      &:hover {
+        box-shadow: 1px 1px 10px $secondary;
+        transition: $transition;
+        img {
+          box-shadow: 1px 1px 20px $secondary;
+          transition: $transition;
+        }
+      }
+    }
   }
 }
