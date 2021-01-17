@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap");
+/*************
+Basic styles
+****************/
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +12,14 @@ body {
   font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*************
+Header
+****************/
 header {
   position: relative;
   height: 100vh;
@@ -79,6 +90,39 @@ header .content h1 {
 header .content p {
   text-align: center;
   font-size: 1.3em;
+}
+
+/**************
+technologies
+**************/
+.technologies {
+  background-color: #f1f1f1;
+  padding-top: 90px;
+}
+.technologies .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.technologies .container article {
+  flex: 0 0 31%;
+  padding: 20px 15px;
+  text-align: center;
+  box-shadow: 1px 1px 5px #111111;
+  margin-bottom: 40px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.technologies .container article h3 {
+  color: #111111;
+  font-size: 1.3em;
+  margin: 15px 0;
+}
+.technologies .container article p {
+  color: #111111;
 }
 
 /*# sourceMappingURL=style.css.map */

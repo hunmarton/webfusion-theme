@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap");
 @import "./variables.scss";
+
+/*************
+Basic styles
+****************/
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,14 @@
 body {
   font-family: Raleway, Arial, Helvetica, sans-serif;
 }
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*************
+Header
+****************/
 header {
   position: relative;
   height: 100vh;
@@ -79,6 +91,39 @@ header {
     p {
       text-align: center;
       font-size: 1.3em;
+    }
+  }
+}
+/**************
+technologies
+**************/
+.technologies {
+  background-color: $lightGray;
+  padding-top: $sectionPadding;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    article {
+      flex: 0 0 31%;
+      padding: 20px 15px;
+      text-align: center;
+      box-shadow: 1px 1px 5px $secondary;
+      margin-bottom: 40px;
+      // background: $white;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 8px;
+      h3 {
+        color: $secondary;
+        font-size: 1.3em;
+        margin: 15px 0;
+      }
+      p {
+        color: $secondary;
+      }
     }
   }
 }
