@@ -226,7 +226,7 @@ about
   background: linear-gradient(to right, rgba($primary, 0.5), rgba($secondary, 0.5)), url(../img/traffic.jpg);
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,11 +245,43 @@ about
   }
 }
 /**************
+counter
+**************/
+.counter {
+  background: $lightGray;
+  position: relative;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: $lightGray;
+    border-radius: 10px;
+    height: 150px;
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 35px 50px;
+    box-shadow: 1px 1px 10px $secondary;
+    h3 {
+      color: $primary;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    p {
+      font-weight: 700;
+      margin-top: 10px;
+      color: $secondary;
+      font-size: 1.8rem;
+    }
+  }
+}
+/**************
 team
 **************/
 .team {
   background: $lightGray;
-  padding: $sectionPadding;
+  padding: 120px 0;
   h2 {
     @include headings();
   }
