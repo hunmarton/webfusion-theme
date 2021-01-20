@@ -194,7 +194,7 @@ technologies
       margin-bottom: 20px;
       margin-top: 20px;
       // background: $white;
-      height: 250px;
+      // height: 250px;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -208,9 +208,9 @@ technologies
         color: $secondary;
         text-align: justify;
       }
-      i {
-        font-size: 4.5rem;
-        color: $primary;
+      img {
+        width: 100%;
+        height: auto;
       }
       &:hover {
         box-shadow: 2px 2px 10px $secondary;
@@ -223,7 +223,7 @@ technologies
 about
 **************/
 .about {
-  background: linear-gradient(to right, rgba($primary, 0.5), rgba($secondary, 0.5)), url(../img/traffic.jpg);
+  background: linear-gradient(to right, rgba($primary, 0.5), rgba($secondary, 0.5)), url(../img/background.jpg);
   background-position: center;
   background-size: cover;
   height: 80vh;

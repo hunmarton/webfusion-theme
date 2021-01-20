@@ -30,17 +30,14 @@ const counter = (int, data, html) => {
       let cnt = int++;
       html.innerHTML = cnt + 1;
     }
-  }, 10);
+  }, 5);
 };
 
-function test() {
-  // console.log(pageYOffset);
-  if (pageYOffset == 1400) {
-    console.log("start now");
+document.addEventListener("scroll", () => {
+  if (pageYOffset == 1500) {
     counter(firstInt, firstData, firstCount);
     counter(secondInt, secondData, secondCount);
     counter(thirdInt, thirdData, thirdCount);
+    console.log(123);
   }
-}
-
-document.addEventListener("scroll", test);
+});
