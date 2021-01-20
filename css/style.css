@@ -73,6 +73,12 @@ header .video video {
   width: 100%;
   object-fit: fill;
 }
+header .img {
+  height: 100vh;
+  background: linear-gradient(to right, rgba(206, 27, 40, 0.6), rgba(17, 17, 17, 0.6)), url(../img/bg-blog.jpg);
+  background-position: center;
+  background-size: cover;
+}
 header .content {
   position: absolute;
   z-index: 10000;

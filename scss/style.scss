@@ -74,6 +74,12 @@ header {
       object-fit: fill;
     }
   }
+  .img {
+    height: 100vh;
+    background: linear-gradient(to right, rgba($primary, 0.6), rgba($secondary, 0.6)), url(../img/bg-blog.jpg);
+    background-position: center;
+    background-size: cover;
+  }
   .content {
     position: absolute;
     z-index: 10000;
